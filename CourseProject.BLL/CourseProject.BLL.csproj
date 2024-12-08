@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CourseProject.Core\CourseProject.Core.csproj" />
+		<ProjectReference Include="..\CourseProject.DAL\CourseProject.DAL.csproj" />
+	</ItemGroup>
+
+</Project>
