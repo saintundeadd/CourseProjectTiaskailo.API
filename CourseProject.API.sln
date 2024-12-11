@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseProject.API", "CourseProject.API\CourseProject.API.csproj", "{5A72727F-C0B4-455F-BC22-579456F00635}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseProject.API", "CourseProject.API\CourseProject.API.csproj", "{5A72727F-C0B4-455F-BC22-579456F00635}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseProject.Core", "CourseProject.Core\CourseProject.Core.csproj", "{3421BF46-49B2-43CF-94BD-F7CC08FD4D14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseProject.Core", "CourseProject.Core\CourseProject.Core.csproj", "{3421BF46-49B2-43CF-94BD-F7CC08FD4D14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseProject.DAL", "CourseProject.DAL\CourseProject.DAL.csproj", "{F23A3AF0-744D-4C2D-A228-A757293D715A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseProject.DAL", "CourseProject.DAL\CourseProject.DAL.csproj", "{F23A3AF0-744D-4C2D-A228-A757293D715A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseProject.BLL", "CourseProject.BLL\CourseProject.BLL.csproj", "{23EAB47A-29A0-43A6-BF29-A5BB0C7E8F4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseProject.BLL", "CourseProject.BLL\CourseProject.BLL.csproj", "{23EAB47A-29A0-43A6-BF29-A5BB0C7E8F4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

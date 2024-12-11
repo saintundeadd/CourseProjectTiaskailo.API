@@ -1,25 +1,32 @@
 ﻿using CourseProject.Core.Entities;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace CourseProject.DAL.Data
 {
     public class CourseProjectDbContext : DbContext
     {
-        public CourseProjectDbContext(DbContextOptions<CourseProjectDbContext> options) : base(options)
+        public DbSet<Indicator> Indicators { get; set; }
+        public DbSet<IndicatorValue> IndicatorValues { get; set; }
+        public DbSet<BackgroundImage> BackgroundImages { get; set; }
+
+        public CourseProjectDbContext(DbContextOptions<CourseProjectDbContext> options)
+            : base(options)
         {
         }
-
-        public DbSet<Boiler> Boilers { get; set; }
-        public DbSet<TemperatureSensor> TemperatureSensors { get; set; }
-        public DbSet<SensorReading> SensorReadings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Boiler>().HasKey(b => b.Id);
-            modelBuilder.Entity<TemperatureSensor>().HasKey(ts => ts.Id);
-            modelBuilder.Entity<SensorReading>().HasKey(sr => sr.Id);
+            modelBuilder.Entity<Indicator>()
+                .HasMany(e => e.IndicatorValues)
+                .WithOne(v => v.Indicator)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
